@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+
+body{
+    background: url('./media/climawpp.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color:beige;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    padding: 20px 70px;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container{
+    font-weight: 100;
+}
+
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+.date-container #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.place-container{
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.place-container .country{
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.422);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border:1px solid black;
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
