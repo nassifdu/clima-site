@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
 
 body{
-    background: url('./media/climawpp.jpg');
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgb(16, 2, 38), rgb(68, 63, 205));
+    background-repeat: repeat;
     background-size: contain;
     color:beige;
-    overflow: hidden;
 }
 
 *{
@@ -16,6 +15,8 @@ body{
 }
 
 .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding: 20px 70px;
 }
 
@@ -59,14 +60,55 @@ body{
 .current-info .others{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.422);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0;
     border:1px solid black;
+    height: 500px
 }
 
 .current-info .others .weather-item{
     display: flex;
     justify-content: space-between;
+    font-size: 22px;
 }
+
+.weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.115);
+    padding: 20px;
+    border-radius: 100px;
+    margin: 10px 0;
+    border:1px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 180px
+}
+
+.day{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.w-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.future-forecast{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#dado{
+    font-weight: bolder;
+}
+
+/* @media only screen and(max-width: 730px){
+
+} */
